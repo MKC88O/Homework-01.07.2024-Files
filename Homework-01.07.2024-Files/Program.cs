@@ -8,7 +8,7 @@
             string[] drives = Directory.GetLogicalDrives();
 
             //var root = new DirectoryInfo(@"D:\World_of_Tanks_EU");
-            var root = new DirectoryInfo(@"C:\Program Files (x86)");
+            var root = new DirectoryInfo(drives[0] + "Program Files (x86)");
             SortedDictionary<string, int> extensionCount = [];
             SortedDictionary<string, double> extensionSize = []; 
             var dirs = root.GetFiles("*", SearchOption.AllDirectories);
